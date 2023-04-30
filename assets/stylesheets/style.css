@@ -2,14 +2,39 @@
     margin: 0;
 }
 
+body{
+    font-size: 100%;
+    background-color: #e1e1e1;
+}
+
 header{
     background-color: black;
-}
-
-h1{
     color: whitesmoke;
 }
 
-h2{
+section{
+    padding: 15px 0;
+}
+
+figcaption{
+    color: lightslategray;
+    font-size: small;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+footer{
+    background-color: black;
     color: whitesmoke;
 }
+
+.box:before {
+    text-align: center;
+    background: darkblue;
+    content: "Contato";
+    display: block;
+    font-weight: 300;
+    font-size: 40px;
+    color: #FFF;
+    text-transform: uppercase;
+  }
