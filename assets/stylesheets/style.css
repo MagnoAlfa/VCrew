@@ -38,3 +38,28 @@ footer{
     color: #FFF;
     text-transform: uppercase;
   }
+
+  /* Estilos CSS para o menu */
+  #ulMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.liMenu {
+    float: left;
+}
+
+.liMenu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.liMenu a:hover {
+    background-color: #111;
+}
