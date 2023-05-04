@@ -4,7 +4,7 @@
 
 body{
     font-size: 100%;
-    background-color: #e1e1e1;
+    background-color: #ff0000;
 }
 
 header{
@@ -38,6 +38,18 @@ footer{
     color: #FFF;
     text-transform: uppercase;
   }
+
+  section{
+
+    background: #e1e1e1;
+    display: block;
+  }
+
+  blockquote {
+    background-color: orange;
+    border: 2px solid blue;
+}
+
 
   /* Estilos CSS para o menu */
   #ulMenu {
