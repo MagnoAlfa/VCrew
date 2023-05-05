@@ -24,9 +24,11 @@ section{
 figcaption{
     color: lightslategray;
     font-size: small;
-    margin-top: -1.5%;
-    margin-left: 2%;
     text-transform: capitalize;
+}
+
+article{
+    background-color: darkkhaki;
 }
 
 footer{
@@ -34,23 +36,30 @@ footer{
     color: whitesmoke;
 }
 
-.boxPost section::before{
+.boxPost section header{
     content: "Nota";
     display: block;
-    width: 100%;
+    width: 102%;
     height: 100%;
     background-color: rebeccapurple;
     padding: 1%;
-    margin: -1%;
+    margin: -2%;
     border: 1px solid black;
 }
 
-.boxPost img{
-    margin: 1%;
-    padding: 1%;
-    width: 30%;
+.boxPost figure{
+    margin: 2%;
+    padding: 0%;
+    width: 100%;
     height: 100%;
 }
+
+.boxPost figure img{
+    width: 100%;
+    height: 100%;
+
+}
+
 
 /*.boxFim:before {
     text-align: center;
@@ -69,6 +78,54 @@ footer{
     border: 2px solid blue;
 }
 
+.page-grid{
+    display: grid;
+    grid-template-rows: 10% 90%;
+  }
+
+  .page-grid header{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .page-grid div{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    margin: 0.5%;
+    padding: 0.5%;
+    grid-template-columns:30% 70%;
+    grid-template-rows: 70% 30%;
+  }
+
+  .page-grid figure{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 90% 10%;
+  }
+  .page-grid figure img{
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .page-grid article{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 1%;
+    margin-left: 3%;
+  }
+
+  .page-grid footer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: 1%;
+    margin-left: 3%;
+  }
 
   /* Estilos CSS para o menu */
   #ulMenu {
