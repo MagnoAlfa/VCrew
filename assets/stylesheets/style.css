@@ -10,6 +10,7 @@ body{
 header{
     background-color: black;
     color: whitesmoke;
+    padding: 0.3%;
 }
 
 section{
@@ -23,7 +24,8 @@ section{
 figcaption{
     color: lightslategray;
     font-size: small;
-    margin-left: 20px;
+    margin-top: -1.5%;
+    margin-left: 2%;
     text-transform: capitalize;
 }
 
@@ -32,8 +34,8 @@ footer{
     color: whitesmoke;
 }
 
-.boxPost::before {
-    content: "Nada";
+.boxPost section::before{
+    content: "Nota";
     display: block;
     width: 100%;
     height: 100%;
@@ -43,21 +45,24 @@ footer{
     border: 1px solid black;
 }
 
-.boxPost figure{
+.boxPost img{
     margin: 1%;
     padding: 1%;
+    width: 30%;
+    height: 100%;
 }
 
-.boxFim:before {
+/*.boxFim:before {
     text-align: center;
-    background-color: black;
+    background-color: darkkhaki;
     content: "Contato";
     display: block;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 100%;
     color: #FFF;
     text-transform: uppercase;
-  }
+  }*/
+
 
   blockquote {
     background-color: orange;
