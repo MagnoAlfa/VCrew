@@ -94,14 +94,13 @@ body{
   width: 80cqw;
   background-color:blue;
   margin: 0%;
-  border: 1px solid whitesmoke;
   padding: 0%;
 }
 
 #manPages section{
-  background-color: tomato;
+  border-radius: 5%;
+  background-color: #555555;
   margin: 1.1cqh 1.5cqw 2cqh 1cqw;
-  border: 2px solid wheat;
   display: grid;
   grid-template-columns:40% 60%;
   grid-template-rows:5cqh minmax(5cqh, auto) 25cqh;
@@ -112,8 +111,10 @@ body{
 }
 
 #manPages section header{
+  border-radius: 7%;
   grid-area:DeT;
-  background-color: green;
+  background-color: #111;
+  color: whitesmoke;
 }
 
 #manPages section figure{
@@ -122,22 +123,23 @@ body{
 }
 
 #manPages section figure img{
+  border-radius: 5%;
   width: 30cqw;
   height: auto;
 }
 
 #manPages section article{
+  border-radius: 8%;
   grid-area:inf;
   padding: 0.8cqh 0.4cqw;
-  border: 1px solid whitesmoke;
-  background-color: greenyellow;
+  background-color: #353535;
 }
 
 #manPages section footer{
+  border-radius: 10%;
   grid-area:rec;
   padding: 0.8cqh 0.4cqw;
-  border: 1px solid whitesmoke;
-  background-color: aquamarine;
+  background-color: #303030;
 }
 
 
@@ -168,3 +170,34 @@ body nav{
 
 
 /*Fim Rodapé/Footer do site =fotPages*/
+
+
+.post-meta {
+  display: flex;
+  align-items: center;
+}
+
+.post-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  height: 5cqh;
+  width: 5cqh;
+  border-radius: 10%;
+  font-size: 135%;
+  font-weight: bold;
+  line-height: 0.9;
+  margin-right: 20px;
+  padding: 0.5%;
+  
+}
+
+.post-day {
+  margin-top: 10px;
+}
+
+.post-month {
+  text-transform: uppercase;
+  font-size: 82%;
+}
