@@ -1,0 +1,170 @@
+/*Ini Globais do site*/
+html{
+  background-color: orange;
+  display: block;
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: red;
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 80% 20%;
+  grid-template-rows:15vh minmax(80vh, auto) 5vh;
+  grid-template-areas:
+  "header header"
+  "main nav"
+  "footer footer";
+}
+
+/*Fim Globais do site*/
+
+/*Ini Cabesario/Header do site =navPages*/
+#navPages{
+  grid-area: header;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0%;
+  border: 1px solid whitesmoke;
+  padding: 0%;
+  display: grid;
+  grid-template-rows:10vh 5vh;
+  grid-template-areas:
+  "Logo"
+  "Menu";
+}
+
+#navPages div,figure,h1,h2,ul{
+  margin: 0%;
+  padding: 0%;
+}
+
+#navPages div{
+  display: flex;
+  justify-content: center;
+}
+
+#navPages div div{
+  flex-direction: column;
+  font-size: 2cqh;
+}
+
+#navPages img{
+  height: 10cqh;
+  width: auto;
+}
+
+#navPages ul{
+  grid-area: Menu;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navPages li{
+  float: left;
+}
+
+#navPages li a {
+  display: block;
+  height: 5cqh;
+  color: white;
+  text-align: center;
+  font-size: 2vh;
+  padding: 1.25vh 1.1cqw;
+  text-decoration: none;
+}
+
+#navPages li a:hover{
+  background-color: #111;
+}
+
+
+/*Fim Cabesario/Header do site =navPages*/
+
+/*Ini Conteudo/Main do site =manPages*/
+
+#manPages{
+  grid-area: main;
+  display: block;
+  height: minmax(80cqh, auto);
+  width: 80cqw;
+  background-color:blue;
+  margin: 0%;
+  border: 1px solid whitesmoke;
+  padding: 0%;
+}
+
+#manPages section{
+  background-color: tomato;
+  margin: 1.1cqh 1.5cqw 2cqh 1cqw;
+  border: 2px solid wheat;
+  display: grid;
+  grid-template-columns:40% 60%;
+  grid-template-rows:5cqh minmax(5cqh, auto) 25cqh;
+  grid-template-areas:
+  "DeT DeT"
+  "banner inf"
+  "banner rec";
+}
+
+#manPages section header{
+  grid-area:DeT;
+  background-color: green;
+}
+
+#manPages section figure{
+  grid-area:banner;
+  padding: 0.8cqh 0.4cqw;
+}
+
+#manPages section figure img{
+  width: 30cqw;
+  height: auto;
+}
+
+#manPages section article{
+  grid-area:inf;
+  padding: 0.8cqh 0.4cqw;
+  border: 1px solid whitesmoke;
+  background-color: greenyellow;
+}
+
+#manPages section footer{
+  grid-area:rec;
+  padding: 0.8cqh 0.4cqw;
+  border: 1px solid whitesmoke;
+  background-color: aquamarine;
+}
+
+
+
+/*Fim Conteudo/Main do site =manPages*/
+
+
+body nav{
+  grid-area: nav;
+  display: inline;
+  /*background-color:brown;*/
+  margin: 0%;
+  border: 1px solid whitesmoke;
+  padding: 0%;
+}
+
+/*Ini Rodapé/Footer do site =fotPages*/
+
+#fotPages{
+  grid-area: footer;
+  display: inline;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0%;
+  border: 1px solid whitesmoke;
+  padding: 0%;
+}
+
+
+/*Fim Rodapé/Footer do site =fotPages*/
