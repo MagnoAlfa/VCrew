@@ -1,0 +1,66 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.box{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 80vw;
+    box-shadow: 5px 5px 1px lightgray;
+    padding: 30px;
+    background-color: palegoldenrod;
+    margin: 1vh 6vw;
+}
+
+.box input{
+    width: 95%;
+    height: 5vh;
+    margin: 1%;
+    border: 0.5px;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 2px 2px 1px lightgray;
+}
+
+.box input:hover{
+    background-color: lightyellow;
+    border-color: gold;
+    box-shadow: 3px 3px 5px lightskyblue;
+}
+
+.box input:focus{
+    background-color: darkgray;
+    border-color: orangered;
+    color: black;
+}
+
+.box input::placeholder{
+    color: darkblue;
+    font-weight: bold;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao input{
+    background-color: gray;
+    padding: 1vw;
+    border: 1px solid black;;
+    margin: 1vw;
+    font-size: 2cqw;
+}
+
+.botao input:hover{
+    background-color: darkgray;
+    border: 1px solid black;
+    box-shadow: 5px 5px 3px lightgray;
+}
+
+label{
+    color: black;
+    font-weight: bold;
+}

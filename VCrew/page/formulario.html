@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>Formulario Geral</title>
+        <link rel="stylesheet" type="text/css" href="formulario/formulario.css">
+
+    </head>
+
+    <body>
+        
+        <h1>Cadastro</h1>
+
+        <form action="">
+            <div class="box">
+            <fieldset>
+                <legend align="center"><b>Dados Pessoais</b></legend>
+
+                <label for="nome" accesskey="n">Nome:</label>
+            <br>
+                <input type="text" id="nome" name="nome" size="20" maxlength="50" 
+                minlength="3" required placeholder="Informe seu nome">
+
+            <br><br>
+
+                <label for="tel">Telefone:</label>
+            <br>
+                <input type="tele" id="tele" name="telefone" size="11" maxlength="11" 
+                minlength="9"  placeholder="Seu numero">
+
+            <br><br>
+
+                <label for="email">Email:</label>
+            <br>
+                <input type="email" id="email" name="email" size="25" maxlength="" 
+                minlength="3"  placeholder="Seu email">
+
+            <br><br>
+
+                <label for="foto">Foto:</label>
+            <br>
+                <input type="file" id="foto" name="foto" accept=".png,.jpg">
+
+            <br><br>
+
+                <label for="idade">Idade:</label>
+            <br>
+                <input type="number" id="idade" name="idade"  min="14" max="10000" size="5" placeholder="Sua idade">
+                <!--step="*" pula as casa decimal em * -->
+            <br><br>
+
+                <label for="data">Nacimento:</label>
+            <br>
+                <input type="date" id="data" name="data" >
+
+            <br><br>
+
+                <label for="senha">Senha:</label>
+            <br>
+                <input type="password" id="senha" name="senha" size="15" maxlength="30" 
+                minlength="5" required placeholder="Crie sua senha">
+
+            <br><br>
+
+                <label for="sexo">Gênero:</label>
+            <br>
+                Masculino<input type="radio" name="sexo" id="sexo" value="M"><br>
+                Ferminino<input type="radio" name="sexo" id="sexo" value="F"><br>
+                Neutro   <input type="radio" name="sexo" id="sexo" value="N" checked>
+
+            <br><br>
+
+            </fieldset>
+            </div>
+            <div class="box">
+            <fieldset>
+                <legend align="center"><b>Dados de Moradia</b></legend>
+
+                <label for="tMoradia">Tipo de Moradia:</label>
+            <br>
+                Propria   <input type="checkbox" name="sexo" id="tMoradia" value="P"><br>
+                Aluguem   <input type="checkbox" name="sexo" id="tMoradia" value="A"><br>
+                Dependente<input type="checkbox" name="sexo" id="tMoradia" value="D">
+
+            </fieldset>
+            </div>
+            <div class="box">
+            <fieldset>
+                <legend align="center"><b>Dados Profissionais</b></legend>
+
+                Data e hora do cadastro:
+            <br>
+                <input type="datetime-local" name="dataHoraCastro" id="dataHoraCastro">
+            
+            <br><br>
+
+            Cargo:
+            <br>
+                <input type="text" value="Professor" readonly name="professor" id="professor">
+            
+            <br><br>
+
+            Cor Uniforme:
+            <br>
+                <input type="color" value="#ff0000" name="corUniforme" id="corUniforme" list="cores">
+
+                <datalist id="cores">
+                    <option value="#ffffff">Banco</option>
+                    <option value="#000000">Preto</option>
+                    <option value="#fff700">Amarelo</option>
+                </datalist>
+            
+            <br><br>
+
+            Curso:
+            <br>
+                <select name="curso" id="curso">
+                    <option value="DS">Des. Sistemas</option>
+                    <option value="ED">Edificações</option>
+                    <option value="EN">Enfermagem</option>
+                    <option value="GE">Geodésia</option>
+                    <option value="ME">Mecânica</option>
+                    <option value="QU">Qualidade</option>
+                    <option value="" selected></option>
+                </select>
+            
+            <br><br>
+
+
+            Curso:
+            <br>
+                <select name="curso" id="curso" size="5" multiple>
+                    <optgroup label="Legal">
+                        <option value="DS">Des. Sistemas</option>
+                        <option value="ME" selected>Mecânica</option>
+                    </optgroup>
+                    <optgroup label="Chato">
+                        <option value="ED">Edificações</option>
+                        <option value="EN">Enfermagem</option>
+                        <option value="GE">Geodésia</option>
+                        <option value="QU">Qualidade</option>
+                    </optgroup>
+                    <option value=""></option>
+                </select>
+            
+            <br><br>
+
+            Conhecimento:
+            <br>
+                <input type="text" name="conhecimento" id="conhecimento" list="l_Conhecimento" accesskey="c">
+
+                <datalist id="l_Conhecimento">
+                    <option value="HTML5">HTML5</option>
+                    <option value="HTML4">HTML4</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="PHP">PHP</option>
+                </datalist>
+            
+            <br><br>
+
+            Que nota você se daria: <small>(de 0 a 10)</small>
+            <br>
+                <input type="range" min="0" max="10" name="capacitação" id="capacitação" value="5">
+
+            <br><br>
+
+            Fale um pouco sobre você:
+            <br>
+                <textarea name="obs" id="obs" cols="100" rows="5" maxlength="10"></textarea>
+
+            <br><br>
+
+            LinkDin:
+            <br>
+                <input type="url" name="url" id="url" required>
+
+
+            </fieldset>
+
+            </div>
+
+            <div class="botao">
+            <input type="submit" value="Cadastra">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Mensagem" onclick="alert('Oi!');">
+            </div>
+        </form>
+    </body>
+
+</html>
